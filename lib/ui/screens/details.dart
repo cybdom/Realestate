@@ -26,12 +26,14 @@ class DetailsScreen extends StatelessWidget {
                   labelText: "CITY",
                   labelStyle: Theme.of(context)
                       .textTheme
-                      .title
-                      .apply(color: Colors.grey),
+                      .titleLarge
+                      ?.apply(color: Colors.grey),
                 ),
                 maxLines: 1,
-                style:
-                    Theme.of(context).textTheme.display1.apply(color: purple),
+                style: Theme.of(context)
+                    .textTheme
+                    .headlineMedium
+                    ?.apply(color: purple),
                 textCapitalization: TextCapitalization.words,
               ),
               Expanded(
@@ -71,7 +73,8 @@ class DetailsScreen extends StatelessWidget {
                                         child: Column(
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
-                                              mainAxisAlignment: MainAxisAlignment.center,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
                                           children: <Widget>[
                                             Container(
                                               padding: EdgeInsets.all(5.0),
@@ -113,36 +116,36 @@ class DetailsScreen extends StatelessWidget {
                                       "3 bd",
                                       style: Theme.of(context)
                                           .textTheme
-                                          .body2
-                                          .apply(color: purple),
+                                          .bodyLarge
+                                          ?.apply(color: purple),
                                     ),
                                     Text(
                                       "/",
                                       style: Theme.of(context)
                                           .textTheme
-                                          .body2
-                                          .apply(color: purple),
+                                          .bodyLarge
+                                          ?.apply(color: purple),
                                     ),
                                     Text(
                                       '3 ba',
                                       style: Theme.of(context)
                                           .textTheme
-                                          .body2
-                                          .apply(color: purple),
+                                          .bodyLarge
+                                          ?.apply(color: purple),
                                     ),
                                     Text(
                                       "/",
                                       style: Theme.of(context)
                                           .textTheme
-                                          .body2
-                                          .apply(color: purple),
+                                          .bodyLarge
+                                          ?.apply(color: purple),
                                     ),
                                     Text(
                                       "3,291 sq",
                                       style: Theme.of(context)
                                           .textTheme
-                                          .body2
-                                          .apply(color: purple),
+                                          .bodyLarge
+                                          ?.apply(color: purple),
                                     ),
                                   ],
                                 )
@@ -186,8 +189,8 @@ class DetailsScreen extends StatelessWidget {
                                 "${filters[f]}",
                                 style: Theme.of(context)
                                     .textTheme
-                                    .button
-                                    .apply(color: purple),
+                                    .labelLarge
+                                    ?.apply(color: purple),
                               ),
                             );
                           },

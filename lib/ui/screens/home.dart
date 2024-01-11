@@ -90,9 +90,9 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 Flexible(
-                  flex: 2,
+                  flex: 3,
                   child: Container(
-                    padding: const EdgeInsets.all(21.0),
+                    padding: const EdgeInsets.all(12.0),
                     decoration: BoxDecoration(
                       boxShadow: [
                         BoxShadow(
@@ -117,8 +117,8 @@ class HomeScreen extends StatelessWidget {
                               "Filters",
                               style: Theme.of(context)
                                   .textTheme
-                                  .headline
-                                  .apply(color: purple),
+                                  .headlineSmall
+                                  ?.apply(color: purple),
                             )
                           ],
                         ),
@@ -144,8 +144,8 @@ class HomeScreen extends StatelessWidget {
                                     "${filters[f]}",
                                     style: Theme.of(context)
                                         .textTheme
-                                        .button
-                                        .apply(color: purple),
+                                        .labelLarge
+                                        ?.apply(color: purple),
                                   ),
                                 );
                               },

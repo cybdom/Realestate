@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:realestate/ui/screens/screens.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -7,16 +8,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        fontFamily: 'RobotoSlab',
-        primarySwatch: Colors.purple,
-      ),
-      home: HomeScreen(),
-      routes: {
-        'details' : (ctx) => DetailsScreen(),
-      }
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          fontFamily: 'RobotoSlab',
+          primarySwatch: Colors.purple,
+        ),
+        home: HomeScreen(),
+        routes: {
+          'details': (ctx) => DetailsScreen(),
+        });
   }
 }
